@@ -61,7 +61,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602676787938</updated>
-      <workItem from="1602676793165" duration="4802000" />
+      <workItem from="1602676793165" duration="5181000" />
     </task>
     <servers />
   </component>
@@ -74,10 +74,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="478" y="268" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1602677572407">
+    <state x="478" y="268" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1602684511467">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state x="478" y="268" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.23.1440.797@0.23.1440.797" timestamp="1602677572407" />
+    <state x="478" y="268" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.23.1440.797@0.23.1440.797" timestamp="1602684511467" />
     <state x="478" y="268" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.23.1440.798@0.23.1440.798" timestamp="1602676848773" />
     <state x="383" y="142" key="search.everywhere.popup" timestamp="1602677633790">
       <screen x="0" y="23" width="1440" height="797" />
