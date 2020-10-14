@@ -37,8 +37,8 @@ public class Player : MonoBehaviour
     private void Zoom()
     {
         cameraMain.fieldOfView = Input.GetMouseButton(1)
-            ? Mathf.Lerp(zoomFieldOfView, startFieldOfView, speed * Time.deltaTime)
-            : Mathf.Lerp(startFieldOfView, zoomFieldOfView, speed * Time.deltaTime);
+            ? zoomFieldOfView
+            : startFieldOfView;
     }
 
     private void Update()
