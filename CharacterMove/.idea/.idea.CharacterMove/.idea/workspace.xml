@@ -19,6 +19,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/InputController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Miror.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Mirror.cs" />
       </list>
     </option>
   </component>
@@ -62,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602676787938</updated>
-      <workItem from="1602676793165" duration="5580000" />
+      <workItem from="1602676793165" duration="5882000" />
     </task>
     <servers />
   </component>
