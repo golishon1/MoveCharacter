@@ -1,6 +1,4 @@
-﻿using System;
-using UnityEngine;
-using UnityEngine.Serialization;
+﻿using UnityEngine;
 
 public class Player : MonoBehaviour
 {
@@ -20,11 +18,9 @@ public class Player : MonoBehaviour
     [SerializeField] private PlayerSetInfo playerSetInfo;
 
     [SerializeField] private MeshRenderer meshRenderer;
-    private float startFieldOfView;
     private Vector2 currentRotation;
-    
-    
-    
+    private float startFieldOfView;
+
 
     private void Start()
     {
@@ -32,15 +28,12 @@ public class Player : MonoBehaviour
         SetPlayerInfo();
     }
 
-    private void SetPlayerInfo()
+    private void Update()
     {
-        fullName = playerSetInfo.Info.fullName;
-        health = playerSetInfo.Info.health;
-        speed = playerSetInfo.Info.speed;
-        
-        meshRenderer.material.SetTexture("_BumpMap",playerSetInfo.Info.texture);
-        meshRenderer.material.EnableKeyword ("_NORMALMAP");
+        Rotate();
+        Zoom();
     }
+
     private void OnEnable()
     {
         InputController.OnMoveInput += MovementLogic;
@@ -51,17 +44,21 @@ public class Player : MonoBehaviour
         InputController.OnMoveInput += MovementLogic;
     }
 
+    private void SetPlayerInfo()
+    {
+        fullName = playerSetInfo.Info.fullName;
+        health = playerSetInfo.Info.health;
+        speed = playerSetInfo.Info.speed;
+
+        meshRenderer.material.SetTexture("_BumpMap", playerSetInfo.Info.texture);
+        meshRenderer.material.EnableKeyword("_NORMALMAP");
+    }
+
     private void Zoom()
     {
         cameraMain.fieldOfView = Input.GetMouseButton(1)
             ? zoomFieldOfView
             : startFieldOfView;
-    }
-
-    private void Update()
-    {
-        Rotate();
-        Zoom();
     }
 
 
