@@ -5,7 +5,8 @@ using UnityEngine.Serialization;
 public class Player : MonoBehaviour
 {
     [SerializeField] private InputController.PlayerType type;
-
+    [SerializeField] private string fullName;
+    [SerializeField] private int health;
     [SerializeField] private float speed = 5f;
     [SerializeField] private float sensitivity = 10f;
     [SerializeField] private float maxYAngle = 80f;
@@ -16,14 +17,30 @@ public class Player : MonoBehaviour
     [SerializeField] private float zoomFieldOfView = 30;
     [SerializeField] private Camera cameraMain;
 
+    [SerializeField] private PlayerSetInfo playerSetInfo;
+
+    [SerializeField] private MeshRenderer meshRenderer;
     private float startFieldOfView;
     private Vector2 currentRotation;
+    
+    
+    
 
     private void Start()
     {
         startFieldOfView = cameraMain.fieldOfView;
+        SetPlayerInfo();
     }
 
+    private void SetPlayerInfo()
+    {
+        fullName = playerSetInfo.Info.fullName;
+        health = playerSetInfo.Info.health;
+        speed = playerSetInfo.Info.speed;
+        
+        meshRenderer.material.SetTexture("_BumpMap",playerSetInfo.Info.texture);
+        meshRenderer.material.EnableKeyword ("_NORMALMAP");
+    }
     private void OnEnable()
     {
         InputController.OnMoveInput += MovementLogic;
