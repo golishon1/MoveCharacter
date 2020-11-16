@@ -1,10 +1,14 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class InputController : MonoBehaviour
 {
+    public enum PlayerType
+    {
+        WASD,
+        Arrow
+    }
+
     public static Action<string, string, PlayerType> OnMoveInput;
 
     private void Update()
@@ -15,11 +19,5 @@ public class InputController : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow) ||
             Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow))
             OnMoveInput?.Invoke("HorizontalArrow", "VerticalArrow", PlayerType.Arrow);
-    }
-
-    public enum PlayerType
-    {
-        WASD,
-        Arrow
     }
 }

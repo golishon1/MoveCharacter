@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using UnityEditor;
 using UnityEngine;
 
 [ExecuteInEditMode]
@@ -15,12 +16,34 @@ public class PlayerSetInfo : MonoBehaviour
         ConvertToJson();
     }
 
+    
+
     public void ConvertToJson()
     {
-        var f = File.ReadAllText(UnZipPath + "settings.json");
-        var playerInfo = JsonUtility.FromJson<PlayerInfo>(f);
-        playerInfo.ConvertFromBase();
-        info = playerInfo;
+        try
+        {
+            throw new DirectoryNotFoundException();
+            var f = File.ReadAllText(UnZipPath + "settings.json");
+            var playerInfo = JsonUtility.FromJson<PlayerInfo>(f);
+            playerInfo.ConvertFromBase();
+            info = playerInfo;
+        }
+        catch (ArgumentException e)
+        {
+            EditorUtility.DisplayDialog("Error", "path is not correct!", "OKAY((", "OK");
+        }
+        catch (DirectoryNotFoundException e)
+        {
+            EditorUtility.DisplayDialog("Error", "Directory not found!", "OKAY((", "OK");
+        }
+        catch (IOException e)
+        {
+            EditorUtility.DisplayDialog("Error", e.Message, "OKAY((", "OK");
+        }
+        catch (Exception e)
+        {
+            EditorUtility.DisplayDialog("Error", e.Message, "OKAY((", "OK");
+        }
     }
 }
 

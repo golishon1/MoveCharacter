@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Wall : MonoBehaviour
 {
@@ -11,7 +8,7 @@ public class Wall : MonoBehaviour
     {
         _color = GetComponent<MeshRenderer>().material.color;
     }
-    
+
     public void ReturnColor()
     {
         GetComponent<MeshRenderer>().material.color = _color;

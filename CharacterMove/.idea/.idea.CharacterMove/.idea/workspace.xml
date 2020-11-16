@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="4" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c3de2537-25b9-4d0a-9c31-91347fe06d7d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,6 +14,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerSetInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Wall.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InputController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -20,7 +24,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/InputController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Miror.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Mirror.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MenuContoller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CubeContorller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CubeController.cs" />
@@ -28,6 +31,10 @@
         <option value="$PROJECT_DIR$/Assets/Editor/MenuColorFills.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Wall.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/InspectorWall.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/Downloader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/DownloaderFileInfo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerSetInfo.cs" />
       </list>
     </option>
   </component>
@@ -73,6 +80,7 @@
       <updated>1602676787938</updated>
       <workItem from="1602676793165" duration="13012000" />
       <workItem from="1603096267033" duration="1324000" />
+      <workItem from="1604496528638" duration="5403000" />
     </task>
     <servers />
   </component>
@@ -85,9 +93,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="478" y="268" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1602684511467">
-      <screen x="0" y="23" width="1440" height="797" />
+    <state x="478" y="267" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1604501956776">
+      <screen x="0" y="23" width="1440" height="794" />
     </state>
+    <state x="478" y="267" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.23.1440.794@0.23.1440.794" timestamp="1604501956776" />
     <state x="478" y="268" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.23.1440.797@0.23.1440.797" timestamp="1602684511467" />
     <state x="478" y="268" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.23.1440.798@0.23.1440.798" timestamp="1602676848773" />
     <state x="383" y="142" key="search.everywhere.popup" timestamp="1602677633790">
